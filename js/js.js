@@ -6,7 +6,14 @@ let dark=document.querySelector('.dark')
 let header=document.querySelector('.header')
 let footer=document.querySelector('.footer')
 let mobileMenuImages=document.getElementsByClassName('mobile-menu__image')
-
+/*===========================
+    Preload
+===========================*/
+let loader=document.querySelector('.loader')
+function preloadHandler(){
+    loader.classList.add('hidden')
+}
+window.addEventListener('load',preloadHandler)
 /*===========================
     Mobile Menu Item
 ===========================*/
